@@ -1,10 +1,11 @@
+#from: https://github.com/rohanaurora/The-Sword-of-Ogoroth
 import time
 import random
 
 
 def print_pause(msg_to_print):
     print(msg_to_print)
-    time.sleep(2)
+    time.sleep(1)
 
 
 def intro(item, option):
@@ -19,7 +20,7 @@ def intro(item, option):
 
 
 def cave(item, option):
-    if "sward" in item:
+    if "sword" in item:
         print_pause("\nYou peer cautiously into the cave.")
         print_pause("\nYou've been here before, and gotten all"
                     " the good stuff. It's just an empty cave"
@@ -34,7 +35,7 @@ def cave(item, option):
         print_pause("\nYou discard your silly old dagger and take "
                     "the sword with you.")
         print_pause("\nYou walk back out to the field.\n")
-        item.append("sward")
+        item.append("sword")
     field(item, option)
 
 
@@ -44,14 +45,14 @@ def house(item, option):
                 "opens and out steps a " + option + ".")
     print_pause("\nEep! This is the " + option + "'s house!")
     print_pause("\nThe " + option + " attacks you!\n")
-    if "sward" not in item:
+    if "sword" not in item:
         print_pause("You feel a bit under-prepared for this, "
                     "what with only having a tiny dagger.\n")
     while True:
         choice2 = input("Would you like to (1) fight or (2) "
                         "run away?")
         if choice2 == "1":
-            if "sward" in item:
+            if "sword" in item:
                 print_pause("\nAs the " + option + " moves to attack, "
                             "you unsheath your new sword.")
                 print_pause("\nThe Sword of Ogoroth shines brightly in "
