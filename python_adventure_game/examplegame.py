@@ -1,3 +1,4 @@
+#from: https://github.com/rohanaurora/The-Sword-of-Ogoroth
 import time
 import random
 
