@@ -1,3 +1,4 @@
+#from: https://github.com/rohanaurora/The-Sword-of-Ogridoth
 import time
 import random
 
@@ -30,7 +31,7 @@ def cave(item, option):
         print_pause("\nIt turns out to be only a very small cave.")
         print_pause("\nYour eye catches a glint of metal behind a "
                     "rock.")
-        print_pause("\nYou have found the magical Sword of Ogoroth!")
+        print_pause("\nYou have found the magical Sword of Ogridoth!")
         print_pause("\nYou discard your silly old dagger and take "
                     "the sword with you.")
         print_pause("\nYou walk back out to the field.\n")
@@ -54,7 +55,7 @@ def house(item, option):
             if "sward" in item:
                 print_pause("\nAs the " + option + " moves to attack, "
                             "you unsheath your new sword.")
-                print_pause("\nThe Sword of Ogoroth shines brightly in "
+                print_pause("\nThe Sword of Ogridoth shines brightly in "
                             "your hand as you brace yourself for the "
                             "attack.")
                 print_pause("\nBut the " + option + "takes one look at "
