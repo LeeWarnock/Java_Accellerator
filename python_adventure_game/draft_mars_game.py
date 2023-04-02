@@ -1,35 +1,44 @@
-#Import Modules
+# Import Modules
 import random
 import time
 
-#create choices and directions
-choose = ["y","n"]
+# create choices and directions
+choose = ["y", "n"]
 directions = ["forward", "backward", "left", "right"]
 
-#random.choice definition
+# random.choice definition
 
-#random.randint definition
+# random.randint definition
 
 
-#print line function with sleep
+# print line function with sleep
 def print_line():
     print(narration)
     time.sleep(1)
 
-#intro function
-def introduction():
+# intro function
 
-#define surface
 
-#define Mirage
+def introduction(oxygen):
+    print_line(
+        "You awake upside-down, held dangling by your flight harness. your seat harness.")
+    print_line(
+        "The viewport on your lander module has shattered, releasing the cabin air pressure.")
+    print_line(
+        "Instinctively, your eyes dart to your suit's remaining oxygen meter. It reads " + oxygen + "% filter remaining)
+# define surface
 
-#define Martian Temple
+# define Mirage
 
-#define reactor
+# define Martian Temple
 
-#define asphyxiation
+# define reactor
 
-#define play again
+# define asphyxiation
+
+# define play again
+
+
 def restart_game():
     restart = input("GAME OVER./nWould you like to play again? (y/n)")
     if restart == "y":
@@ -38,6 +47,13 @@ def restart_game():
     elif restart == "n":
         print_line("You close your eyes as you accept your fate. With each breath the air in your suit becomes more acrid. As your consciousness slips away a wave of euphoric understanding washes over you, and your essence becomes one with the universe.")
 
-#start the game function
+# start the game function
+
+
 def start_game():
+    oxygen = random.randint(10, 88)
+
+    introduction(oxygen)
+
+
 start_game()
